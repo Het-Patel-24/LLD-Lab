@@ -1,0 +1,14 @@
+{
+  "name": "lld-practice-platform",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server/src/index.js",
+    "test": "node --test server/test/*.test.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "groq-sdk": "^1.6.0"
+  }
+}

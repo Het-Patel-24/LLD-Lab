@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
+
+/* ── Reset & base ────────────────────────────────────────── */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f7f7f4;
+  color: #172321;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* ── Header ──────────────────────────────────────────────── */
+
+header {
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 max(5vw, 28px);
+  border-bottom: 1px solid #dce3dc;
+  background: #fbfcfa;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+
+.brand {
+  font-size: 23px;
+  font-weight: 700;
+  color: #142c25;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+.brand span {
+  color: #e66d45;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+}
+
+nav a {
+  color: #52635d;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* ── Main layout ─────────────────────────────────────────── */
+
+main {
+  max-width: 1120px;
+  margin: auto;
+  padding: 48px 28px 80px;
+}
+
+/* ── Hero ─────────────────────────────────────────────────── */
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #d5633f;
+}
+
+.hero {
+  max-width: 700px;
+}
+
+.hero h1,
+.page-title {
+  font-family: 'Instrument Serif', serif;
+  font-size: 55px;
+  line-height: 0.95;
+  font-weight: 400;
+  margin: 13px 0 18px;
+  letter-spacing: -1.5px;
+}
+
+.hero p {
+  color: #62716b;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+/* ── Card grid ───────────────────────────────────────────── */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+  margin-top: 38px;
+}
+
+.card,
+.panel {
+  background: #fff;
+  border: 1px solid #dde5de;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 3px #17232105;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-height: 270px;
+}
+
+.card h2 {
+  margin: 16px 0 8px;
+  font-size: 21px;
+}
+
+.card p,
+.muted {
+  color: #63716c;
+  line-height: 1.55;
+  font-size: 14px;
+}
+
+.pill {
+  align-self: flex-start;
+  background: #f9e6dc;
+  color: #a94b2f;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.card .button {
+  margin-top: auto;
+}
+
+/* ── Buttons ─────────────────────────────────────────────── */
+
+.button,
+button {
+  border: 0;
+  border-radius: 7px;
+  background: #183d32;
+  color: white;
+  padding: 11px 16px;
+  font: 600 14px 'DM Sans';
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button:hover,
+button:hover {
+  background: #285a4a;
+}
+
+.secondary {
+  background: #eaf0ea;
+  color: #183d32;
+}
+
+.secondary:hover {
+  background: #dce8dd;
+}
+
+/* ── Detail page ─────────────────────────────────────────── */
+
+.back {
+  color: #426158;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.detail {
+  max-width: 760px;
+}
+
+.detail h1 {
+  font-family: 'Instrument Serif';
+  font-size: 52px;
+  font-weight: 400;
+  margin: 15px 0;
+}
+
+.section {
+  margin-top: 27px;
+}
+
+.section h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.section ul {
+  color: #52635d;
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.callout {
+  background: #e9f1ed;
+  border-left: 3px solid #5a977a;
+  padding: 15px 18px;
+  border-radius: 3px;
+  color: #305143;
+}
+
+/* ── Practice form ───────────────────────────────────────── */
+
+.form-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 25px;
+}
+
+.form-layout aside {
+  height: min-content;
+}
+
+.form-section {
+  margin-bottom: 22px;
+}
+
+.form-section h2 {
+  font-size: 18px;
+  margin: 0 0 5px;
+}
+
+.form-section p {
+  margin: 0 0 12px;
+  color: #64736c;
+  font-size: 13px;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #344942;
+  margin: 10px 0;
+}
+
+input,
+textarea {
+  width: 100%;
+  font: 14px 'DM Sans';
+  border: 1px solid #ccd8ce;
+  background: #fcfdfb;
+  border-radius: 7px;
+  padding: 10px;
+  margin-top: 6px;
+  color: #1b2e28;
+}
+
+textarea {
+  min-height: 86px;
+  resize: vertical;
+}
+
+/* ── Class cards ─────────────────────────────────────────── */
+
+.class-card {
+  position: relative;
+  border: 1px solid #d9e4da;
+  border-radius: 9px;
+  padding: 13px 16px;
+  margin: 12px 0;
+  background: #fbfdfb;
+}
+
+.class-card .remove {
+  position: absolute;
+  right: 10px;
+  top: 9px;
+  padding: 1px 7px;
+  background: transparent;
+  color: #8c4c3b;
+  font-size: 22px;
+}
+
+.class-card details {
+  font-size: 13px;
+  color: #51635b;
+  margin-top: 10px;
+}
+
+.class-card details textarea {
+  min-height: 52px;
+}
+
+/* ── Sidebar ─────────────────────────────────────────────── */
+
+.sticky {
+  position: sticky;
+  top: 91px;
+}
+
+.checklist {
+  font-size: 13px;
+  color: #5e7068;
+  line-height: 1.8;
+  padding-left: 18px;
+}
+
+/* ── Notices ──────────────────────────────────────────────── */
+
+.notice {
+  padding: 13px 16px;
+  border-radius: 8px;
+  background: #fff1e9;
+  color: #974124;
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+/* ── Feedback page ───────────────────────────────────────── */
+
+.feedback-head {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  margin-bottom: 26px;
+}
+
+.score {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  background: #173d32;
+  color: white;
+  text-align: center;
+}
+
+.score b {
+  font: 46px 'Instrument Serif';
+}
+
+.score span {
+  font-size: 12px;
+}
+
+/* ── Rubric rows ─────────────────────────────────────────── */
+
+.rubric {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 20px;
+  border-top: 1px solid #e0e7e1;
+  padding: 20px 0;
+}
+
+.rubric h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.rating {
+  color: #d96c45;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.rubric p {
+  font-size: 14px;
+  color: #4e625a;
+  line-height: 1.5;
+  margin: 6px 0;
+}
+
+.rubric b {
+  font-size: 12px;
+  color: #1c493a;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+/* ── Attempt history ─────────────────────────────────────── */
+
+.attempt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e7e1;
+  padding: 17px 0;
+}
+
+.attempt:last-child {
+  border: 0;
+}
+
+.delta {
+  color: #347e5f;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* ── Empty state ─────────────────────────────────────────── */
+
+.empty {
+  text-align: center;
+  padding: 65px 20px;
+}
+
+.empty h2 {
+  font-family: 'Instrument Serif';
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.status {
+  font-size: 13px;
+  color: #60716a;
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+
+@media (max-width: 720px) {
+  .grid,
+  .form-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1,
+  .page-title {
+    font-size: 43px;
+  }
+
+  .form-layout aside {
+    display: none;
+  }
+
+  .rubric {
+    grid-template-columns: 1fr;
+  }
+
+  .feedback-head {
+    gap: 16px;
+  }
+
+  .score {
+    width: 105px;
+    height: 105px;
+  }
+
+  .score b {
+    font-size: 38px;
+  }
+
+  main {
+    padding: 30px 18px;
+  }
+
+  header {
+    padding: 0 18px;
+  }
+}

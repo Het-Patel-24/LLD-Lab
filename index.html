@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Practice Low-Level Design problems with structured feedback and rubric-based evaluation."
+    />
+    <title>LLD Practice Platform</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="#/">LLD<span>Lab</span></a>
+      <nav>
+        <a href="#/">Problem library</a>
+        <a href="#/history">My attempts</a>
+      </nav>
+    </header>
+
+    <main id="app"></main>
+
+    <!-- Template for adding class cards in the practice form -->
+    <template id="class-template">
+      <div class="class-card">
+        <button class="remove" title="Remove class">×</button>
+        <label>
+          Class name
+          <input class="c-name" placeholder="e.g. ParkingLot" />
+        </label>
+        <label>
+          Responsibility
+          <textarea
+            class="c-resp"
+            placeholder="What is this class responsible for?"
+          ></textarea>
+        </label>
+        <details>
+          <summary>Important attributes and methods (optional)</summary>
+          <textarea
+            class="c-attrs"
+            placeholder="Attributes: floors, tickets"
+          ></textarea>
+          <textarea
+            class="c-methods"
+            placeholder="Methods: parkVehicle(), exitVehicle()"
+          ></textarea>
+        </details>
+      </div>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
