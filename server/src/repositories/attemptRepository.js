@@ -1,7 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const dbPath = path.join(__dirname, '../../data/db.json');
+const dbPath = process.env.VERCEL 
+  ? path.join('/tmp', 'db.json')
+  : path.join(__dirname, '../../data/db.json');
 
 function read() {
   try {

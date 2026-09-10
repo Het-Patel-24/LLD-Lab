@@ -157,6 +157,10 @@ app.use((err, _req, res, _next) => {
 
 /* ── Start ──────────────────────────────────────────────── */
 
-app.listen(PORT, () =>
-  console.log(`LLD Practice Platform: http://localhost:${PORT}`)
-);
+if (process.env.VERCEL !== '1' && process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () =>
+    console.log(`LLD Practice Platform: http://localhost:${PORT}`)
+  );
+}
+
+module.exports = app;
